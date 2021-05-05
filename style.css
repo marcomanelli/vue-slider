@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {background-color: blue;}
+
+
+.container{
+  background-color: red;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.wrapper .images {
+  height: 100%;
+  text-align: center;
+}
+
+.wrapper .images img {
+  height: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  cursor: pointer;
+  color: black;
+}
+
+.next {
+  right: 0;
+}
