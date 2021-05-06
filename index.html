@@ -26,7 +26,7 @@
       <nav>
         <i 
           v-for="{photos, index} in photos"
-          :class="{index == counter} ? 'active' : null"
+          :class="(index === counter) ? 'active' : null"
           class="fas fa-circle"
           @click="counter = index"
           ></i>
